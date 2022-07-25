@@ -17,24 +17,17 @@
 ELMSD<-function(x,nhid,k){
   
   set.seed(11111)
-  
   model <- elmtrain.default(x,x,data=x, nhid=nhid, actfun="purelin")
   mpw<-model$inpweight
   mbas <-model$biashid
   # mow  <-model$outweight
   cot<-(x %*% t(mpw)+mbas)
-  
   A<- affs(cot)
-  
   sd<-self.diffusion(A,4)
-  
   lab<- spec.clu(sd,k)
-  
   results <- list()
-  
   results[["clu"]] <- lab
   results[["S"]] <- A
-  
   return(results)
   
 }
