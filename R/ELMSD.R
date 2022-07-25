@@ -22,7 +22,7 @@ ELMSD<-function(x,nhid,k){
   mpw<-model$inpweight
   mbas <-model$biashid
   # mow  <-model$outweight
-  cot<-(mcr582 %*% t(mpw)+mbas)
+  cot<-(x %*% t(mpw)+mbas)
   
   A<- affs(cot)
   
