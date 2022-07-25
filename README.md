@@ -9,7 +9,7 @@ You can install ELMSD from GitHub directly using devtools.
 
 ## Example
   ```    
-  We used processed colorectal cancer gene expression demonstrate the ELMSD 
+  We used preprocessed colorectal cancer gene expression demonstrate the ELMSD 
   data(data)
   test<-ELMSD(Gene_expression,1650,5)
  ```
