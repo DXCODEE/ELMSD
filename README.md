@@ -1,5 +1,5 @@
 # ELMSD
-Compressed representation of extreme learning machine with self-diffusion  network denoising applied on cancer subtyping
+Compressed representation of extreme learning machine with diffusion-based  graph denoising applied on cancer subtyping
 ## Installation
 
 You can install ELMSD from GitHub directly using devtools.
