@@ -9,9 +9,8 @@ You can install ELMSD from GitHub directly using devtools.
 
 ## Example
   ```    
-  We used preprocessed colorectal cancer gene expression to demonstrate the ELMSD 
-  data(ov)
-  test<-ELMSD(x=otcga,hiden=500,k=4)
+  data(Gene_expression)
+  test<-ELMSD(x=Gene_expression,hiden=500,k)
  ```
 ## Compare subtypes outcome
 
