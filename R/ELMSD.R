@@ -12,7 +12,7 @@
 #' @export
 #' @examples
 #' data(Gene_expression)
-#' test<-MOSD(Gene_expression,500,5)
+#' test<-MOSD(Gene_expression,nhid,k)
     
 ELMSD<-function(x,nhid,k){
   
