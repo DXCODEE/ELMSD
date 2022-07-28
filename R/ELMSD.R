@@ -2,7 +2,7 @@
 #' @name ELMSD
 #' @title Compressed representation of extreme learning machine with self-diffusion  network denoising applied on cancer subtyping.
 #' @description Cancer subtypes identifition by dimensioanl reduction and denoising.
-#' @param x Gene expression matrix,Rows are samples and columns are features. 
+#' @param x Gene expression matrix and rows are samples,columns are features. 
 #' @param nhid Numbers of hidden nodes in extreme learning machine.
 #' @param k  Clustering number 
 
