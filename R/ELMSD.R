@@ -12,12 +12,12 @@
 #' @export
 #' @examples
 #' data(Gene_expression)
-#' test<-MOSD(Gene_expression,1650,5)
+#' test<-MOSD(Gene_expression,500,5)
     
 ELMSD<-function(x,nhid,k){
   
   set.seed(11111)
-  model <- elmtrain.default(x,x,data=x, nhid=nhid, actfun="purelin")
+  model <- elmtrain.default(x,x,data=x, nhid=nhid, actfun="sig")
   mpw<-model$inpweight
   mbas <-model$biashid
   # mow  <-model$outweight
@@ -27,7 +27,7 @@ ELMSD<-function(x,nhid,k){
   lab<- spec.clu(sd,k)
   results <- list()
   results[["clu"]] <- lab
-  results[["S"]] <- A
+  results[["S"]] <- sd
   return(results)
   
 }
