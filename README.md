@@ -3,8 +3,8 @@ Compressed representation of extreme learning machine with diffusion-based  grap
 ## Installation
 
 You can install ELMSD from GitHub directly using devtools.
-- install dependency package:elmNN
 - install.packages("devtools")
+- dependency package:install_github("cran/elmNN")
 - devtools::install_github("DXCODEE/ELMSD")
 
 ## Example
